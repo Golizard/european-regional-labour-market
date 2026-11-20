@@ -3,17 +3,17 @@
 An independent Data Analyst portfolio project examining GDP per capita and
 unemployment across EU regions in 2024, using the Eurostat API and GISCO.
 
-**Status:** data preparation, exploratory analysis and the interactive map are
-completed locally. Public deployment and selection of a code license remain pending.
+**Status:** data preparation, exploratory analysis and the interactive map are complete. The map is published on GitHub Pages. A code license has not yet been selected.
 
 ## Interactive map
 
+**[Open the interactive map](https://golizard.github.io/european-regional-labour-market/)**
 Open [`docs/index.html`](docs/index.html) in a browser, keeping its adjacent
 `assets/vendor/` directory. The map works without an internet connection.
 It has synchronized GDP/unemployment colors and legends, touch-friendly region
 details, observation flags, missing-value styling and an all-regions view.
 
-[![Interactive map preview](docs/assets/map_preview.png)](docs/index.html)
+[![Interactive map preview](docs/assets/map_preview.png)](https://golizard.github.io/european-regional-labour-market/)
 
 On a phone, controls sit above and below the map instead of covering it.
 The class key is initially collapsed; selecting a region shows its values in
