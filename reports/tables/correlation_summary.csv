@@ -1,0 +1,3 @@
+sample,n_regions,spearman_rho,pearson_r
+All complete pairs,241,-0.3781659458424962,-0.33573467832910925
+Excluding unemployment flag u,222,-0.38743569222280405,-0.33823332505586523

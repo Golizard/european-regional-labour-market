@@ -1,0 +1,8 @@
+check,value
+rows,244
+unique_regions,244
+duplicate_region_year_keys,0
+missing_unemployment,3
+missing_gdp,0
+complete_pairs,241
+complete_pairs_with_unemployment_u,19

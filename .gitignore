@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.env
+.env.*
+!.env.example
+.vscode/
+*.log
+
+# Source snapshots and generated artifacts are deliberately kept for offline
+# reproduction of this small, public-data analysis; see data/README.md.

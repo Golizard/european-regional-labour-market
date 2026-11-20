@@ -1,0 +1,8 @@
+# Preserve source snapshot bytes and accept CRLF line endings.
+data/raw/** -text whitespace=trailing-space,space-before-tab,cr-at-eol
+
+# Preserve the upstream stylesheet without whitespace checks.
+docs/assets/vendor/** -text -whitespace
+
+# Folium generates trailing spaces in the exported page.
+docs/index.html -whitespace

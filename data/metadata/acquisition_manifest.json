@@ -1,0 +1,66 @@
+{
+  "manifest_created_at_utc": "2026-11-18T12:02:26.110521+00:00",
+  "note": "Download timestamps were not recorded during the initial requests. Null values indicate unknown download timestamps.",
+  "files": [
+    {
+      "path": "data/raw/eurostat/unemployment_poland_2024.json",
+      "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfst_r_lfu3rt?lang=EN&freq=A&unit=PC&sex=T&age=Y15-74&isced11=TOTAL&geo=PL&time=2024",
+      "downloaded_at_utc": null,
+      "size_bytes": 3426,
+      "sha256": "5cf5a100082bce2dc4b82fc0d00df29b21fd983a24d8882283d029e8c282e3b4",
+      "source_updated_at": "2026-10-30T23:00:00+0100"
+    },
+    {
+      "path": "data/raw/eurostat/unemployment_nuts2_2024.json",
+      "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfst_r_lfu3rt?lang=EN&freq=A&unit=PC&sex=T&age=Y15-74&isced11=TOTAL&time=2024&geoLevel=nuts2",
+      "downloaded_at_utc": null,
+      "size_bytes": 20786,
+      "sha256": "172c7bab0f377f58f5ed0107db0d1ec4f2d7eb9c860e64aa22b99eece8d43c7e",
+      "source_updated_at": "2026-10-30T23:00:00+0100"
+    },
+    {
+      "path": "data/raw/geography/nuts_2024_units.json",
+      "source_url": "https://gisco-services.ec.europa.eu/distribution/v2/nuts/nuts-2024-units.json",
+      "downloaded_at_utc": null,
+      "size_bytes": 1670146,
+      "sha256": "4a0c651669d9226fcc01bf9bbd8c29848639ebafcb7fc261ca2963c3203da5b1"
+    },
+    {
+      "path": "data/raw/eurostat/gdp_per_capita_pps_poland_2024.json",
+      "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10r_2gdp?lang=EN&freq=A&unit=PPS_EU27_2020_HAB&geo=PL&time=2024",
+      "downloaded_at_utc": "2026-11-18T12:02:26.385516+00:00",
+      "size_bytes": 2594,
+      "sha256": "a663dc1dc07af895501e0e41ff521f027782f6db754b9b5f3186e65b6f87703d",
+      "request_started_at_utc": "2026-11-18T12:02:26.121663+00:00",
+      "source_updated_at": "2026-02-10T11:00:00+0100"
+    },
+    {
+      "path": "data/raw/eurostat/gdp_per_capita_pps_nuts2_2024.json",
+      "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10r_2gdp?lang=EN&freq=A&unit=PPS_EU27_2020_HAB&time=2024&geoLevel=nuts2",
+      "downloaded_at_utc": "2026-11-18T12:02:26.852328+00:00",
+      "size_bytes": 18392,
+      "sha256": "ea8b0eb7abb6da4daa6b5609a95584f764f3e87178113914ec1b48553037b481",
+      "request_started_at_utc": "2026-11-18T12:02:26.459224+00:00",
+      "source_updated_at": "2026-02-10T11:00:00+0100"
+    },
+    {
+      "path": "data/raw/geography/nuts_2024_level2_20m.geojson",
+      "source_url": "https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/NUTS_RG_20M_2024_4326_LEVL_2.geojson",
+      "request_started_at_utc": "2026-11-19T14:10:06.991739+00:00",
+      "downloaded_at_utc": "2026-11-19T14:10:09.347044+00:00",
+      "size_bytes": 674249,
+      "sha256": "0b5373f31b1ab9f7c2f93d156021ff7e489ed2d2348db43c55846290e182211a"
+    }
+  ],
+  "manifest_updated_at_utc": "2026-11-19T14:10:09.369190+00:00",
+  "provenance_corrections": [
+    {
+      "review_date": "2026-11-19",
+      "path": "data/raw/eurostat/gdp_per_capita_pps_nuts2_2024.json",
+      "field": "downloaded_at_utc",
+      "previous_value": "2026-11-18T12:02:26.459224+00:00",
+      "corrected_value": "2026-11-18T12:02:26.852328+00:00",
+      "evidence": "Original saved output of 01_api_and_metadata.ipynb, code cell 34 (execution 37), printed Response received at. The old manifest mistakenly reused request start time."
+    }
+  ]
+}

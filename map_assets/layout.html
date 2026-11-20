@@ -1,0 +1,46 @@
+<div class="atlas-app" id="atlas-app">
+  <aside class="atlas-sidebar" aria-label="Map information and controls">
+    <div class="atlas-top">
+      <header class="atlas-heading">
+        <div class="atlas-brand"><span class="atlas-brand-mark" aria-hidden="true">EU</span><span>REGIONAL DATA EXPLORER</span><span class="atlas-year">2024</span></div>
+        <h1>EU Labour Market</h1>
+        <p class="atlas-intro">Economic activity and unemployment<br>across Europe's regions.</p>
+      </header>
+      <div class="atlas-metric-switch" role="group" aria-label="Map indicator">
+        <button type="button" data-metric="gdp" aria-pressed="true"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 16V9m7 7V4m7 12v-6"/></svg><span>GDP per capita</span></button>
+        <button type="button" data-metric="unemployment" aria-pressed="false"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 15l5-5 4 2 5-8M13 4h4v4"/></svg><span>Unemployment</span></button>
+      </div>
+    </div>
+    <div class="atlas-bottom" id="atlas-bottom">
+      <section class="atlas-legend" aria-label="Color legend">
+        <div class="atlas-legend-heading"><div><h2 id="atlas-metric-title">GDP per capita</h2><p id="atlas-metric-unit">PPS per inhabitant</p></div><span class="atlas-coverage" id="atlas-coverage"></span></div>
+        <div class="atlas-color-strip" id="atlas-color-strip" aria-hidden="true"></div>
+        <div class="atlas-range"><span id="atlas-range-min"></span><span id="atlas-range-max"></span></div>
+        <details class="atlas-key" id="atlas-key">
+          <summary>Class boundaries<svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg></summary>
+          <div class="atlas-key-body"><div id="atlas-legend-rows"></div><p class="atlas-class-note" id="atlas-class-note"></p></div>
+        </details>
+        <div class="atlas-missing-key" id="atlas-missing-key"><span aria-hidden="true"></span><span id="atlas-missing-text"></span></div>
+      </section>
+      <section class="atlas-region-card" id="atlas-region-card" aria-label="Selected region" aria-live="polite">
+        <div class="atlas-region-empty" id="atlas-region-empty"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 3 12 8-6 2-3 7-3-17Zm6 10 5 6"/></svg><h2>Explore a region</h2><p>Click or tap a region to compare<br>its GDP and unemployment.</p></div>
+        <div id="atlas-region-content" hidden>
+          <div class="atlas-region-header"><div><p class="atlas-region-code" id="atlas-region-code"></p><h2 id="atlas-region-name"></h2></div><button type="button" class="atlas-icon-button" id="atlas-clear-region" aria-label="Clear selected region"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"/></svg></button></div>
+          <div class="atlas-region-values"><div><span>GDP per capita</span><strong id="atlas-region-gdp"></strong><small>PPS per inhabitant</small></div><div><span>Unemployment</span><strong id="atlas-region-unemployment"></strong><small>of the labour force</small></div></div>
+          <p class="atlas-region-flags" id="atlas-region-flags"></p>
+        </div>
+      </section>
+      <details class="atlas-about" id="atlas-about">
+        <summary>About the data<svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg></summary>
+        <div class="atlas-about-body"><p><strong id="atlas-scope"></strong> Equal-weight regions, NUTS 2024 geography.</p><p>Unemployment: annual EU-LFS rate, ages 15–74. GDP: economic activity per inhabitant in PPS, not residents' income. PPS uses national price adjustments, not separate regional adjustments.</p><p>Classes are based on quintiles of available regional values. Ties can produce unequal class sizes. Grey indicates an unavailable value; pale background areas are outside the study scope.</p><p>Flags: <strong>u</strong> low reliability; <strong>b</strong> time-series break; <strong>d</strong> different definition; <strong>p</strong> provisional; <strong>e</strong> estimated. No attached flag is not a quality guarantee.</p><p>The map is descriptive. It does not establish causation or individual-level relationships.</p><p>Sources: Eurostat <a href="https://ec.europa.eu/eurostat/databrowser/view/lfst_r_lfu3rt/default/table?lang=en" target="_blank" rel="noopener noreferrer">unemployment</a>, <a href="https://ec.europa.eu/eurostat/databrowser/view/nama_10r_2gdp/default/table?lang=en" target="_blank" rel="noopener noreferrer">regional GDP</a> and <a href="https://gisco-services.ec.europa.eu/distribution/v2/nuts/" target="_blank" rel="noopener noreferrer">GISCO boundaries</a>.</p></div>
+      </details>
+      <footer class="atlas-source">Statistics: Eurostat · Geography: GISCO NUTS 2024<br>© EuroGeographics for the administrative boundaries</footer>
+    </div>
+  </aside>
+  <main class="atlas-map-stage" id="atlas-map-stage" aria-label="Interactive map of EU regions">
+    <div class="atlas-map-slot" id="atlas-map-slot"></div>
+    <nav class="atlas-view-switch" aria-label="Geographic extent"><button type="button" id="atlas-view-europe" aria-pressed="true">Europe</button><button type="button" id="atlas-view-all" aria-pressed="false">All regions</button></nav>
+    <div class="atlas-map-caption"><span id="atlas-total-regions"></span> · Click a region to explore</div>
+  </main>
+</div>
+<noscript><p class="atlas-noscript">Enable JavaScript to explore this map. The analysis and data remain available in the project repository.</p></noscript>
